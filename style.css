@@ -1,0 +1,50 @@
+/* General Styling  */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background:pink;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s ease; 
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+/*  Box Styling  */
+#box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: transform 0.5s ease; 
+}
+
+/*  Keyframe Animation  */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-150px); }
+  100% { transform: translateY(0); }
+}
+
+/* Active animation class */
+.bounce {
+  animation: bounce 1s ease-in-out;
+}
